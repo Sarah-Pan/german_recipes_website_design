@@ -1,0 +1,325 @@
+<html>
+<head>
+<script src="https://kit.fontawesome.com/ad41a5cf04.js" crossorigin="anonymous"></script>
+<link href="../images/favicon.ico" rel="shortcut icon"/>
+<title>Wurstsalat</title>
+<style>
+html{
+	font-size:10px;
+	}
+html, body{
+    height: 100%;
+}
+
+nav {
+		color: black;
+		min-width: 600px;
+		margin:0px;
+		padding:5px;
+		background-color: black;
+}
+
+nav a{
+		color: white;
+		font-size: 2rem;
+		text-decoration: none;
+}
+		
+nav a:hover{
+		text-decoration: underline;
+}
+
+.banner img{
+            width: 100%;
+            height: auto;
+			position: relative;
+			opacity:0.6;
+}
+		
+.banner{
+            position: relative;
+			align-items: center; 
+}
+		
+.banner .title h1{
+            width: 100%;
+            position: absolute;
+            display: flex;
+            justify-content: center;
+            top: 40%;
+            font-size: 5rem;
+			color: black;
+}
+		
+.banner .title p{
+            width: 100%;
+            position: absolute;
+            display: flex;
+            justify-content: center;
+            top: 30%;
+            font-size: 2.5rem;
+			font-weight:bold;
+			font-family: "FangSong";
+			color: black;		
+}
+
+.name{
+		text-align:center;
+		font-size:2rem;
+		font-family: "DFKai-SB"
+		display: flex;}
+.en{
+	text-align:center;
+		font-size:3rem;
+		font-family: "Georgia";
+		font-style:italic;}
+
+.bild img{
+		width:30%;
+		height:auto;
+		margin:50px;
+		float:left;
+	
+		}
+.tag {
+		border: 2px solid lightsteelblue;
+		width:20%;
+		height:auto;
+		text-align:center;
+		margin: auto;
+		border-radius: 50px 10px 50px 10px;
+		background-color:lightblue;
+		}	
+		
+.tag a {
+		font-size:1.7rem;
+		font-weight:bold;
+		color:black;
+		text-decoration:none;
+		}
+		
+.tag a:hover {
+		font-size:1.7rem;
+		font-weight:bold;
+		color:indianred;
+		text-decoration:underline;
+		}
+.dauer {
+		display:flex;
+		justify-content:space-around;
+		}
+.dauer p {
+		font-size:1.5rem;
+		font-weight:bold;
+		/*text-decoration:underline;*/
+		box-shadow: 0 2px DimGrey;
+		padding-bottom:5px;}
+
+#one {
+	font-size:2rem;
+	color:red;}
+
+#two {
+	font-size:2rem;
+	color:blue;}
+
+#time p:before{
+			font-family: "Font Awesome 5 Free"; 
+			content: "\f017";
+			font-size: 1.5rem;
+			color:darkblue;
+		}
+#level p:before{
+	font-family: "Font Awesome 6 Free"; 
+			content: "\e2ca";
+			font-size: 1.5rem;
+			color:darkblue;
+		}
+#volume p:before{
+	font-family: "Font Awesome 6 Free"; 
+			content: "\f007";
+			font-size: 1.5rem;
+			color:darkblue;
+			}
+.description{
+	display:flex;
+	justify-content:space-between;
+	margin: 50px 0px;
+			}
+.ingredient h2:before{
+		font-family: "Font Awesome 6 Free"; 
+			content: "\f2e7";
+			font-size: 1.5rem;
+			color:darkblue;
+			}
+
+.ingredient h2{
+		font-size:2rem;
+		font-family: "DFKai-SB"
+			}
+			
+.ingredient li{
+		font-size:1.7rem;
+		font-family: "DFKai-SB";
+		line-height:2rem;
+		}
+		
+.step h2:before{
+		font-family: "Font Awesome 6 Free"; 
+			content: "\e51a";
+			font-size: 1.5rem;
+			color:darkblue;
+			}
+
+.step h2{
+		font-size:2rem;
+		font-family: "DFKai-SB"
+			}
+			
+.step li{
+		font-size:1.7rem;
+		font-family: "DFKai-SB";
+		line-height:2.5rem;}
+.GA{
+	}
+
+.GA img{
+	width:20%;
+	height:auto;
+	margin:50px;
+	}
+
+.footer {
+			background:black;
+			padding:10px;
+			width:100%;
+			height:20px;
+			text-align:center;
+			}
+.footer a{	
+			margin:5px;
+			font-size:1.5rem;
+			color:white;
+			font-weight:bold;
+			text-align:center;}
+　
+</style>
+</head>
+<body onload="load()">
+<div class="wrapper">
+<nav>
+	<a href="../finalproject.html">首頁 |</a> 
+	<a href="../About.html">關於 |</a> 
+	<a href="../finalproject.html#T">標籤 |</a> 
+	<a href="../rezept.html">所有食譜 |</a>
+</nav>
+
+<div class="banner">
+    <img src="../images/banner.jpg">
+    <div class="title">
+        <h1>Simply Recipes</h1>
+		<p>簡單的料理，美味的菜餚！</p>
+		</div>
+    </div>
+<div class = "name" id="N">
+	<h1>香腸沙拉 <span class="en">Wurstsalat</span></h1>
+	<div class="tag">
+		<p><a href="../tags/salattag.html#T">沙拉 Salate</a><p>
+	</div>
+</div>
+
+<div class = "dauer">
+	<div id="time">
+		<p> 製作時間: <span id="one"></span>分鐘 </p>
+		<i class="fa-solid fa-alarm-clock"></i>
+	</div>
+	<div id= "level">
+		<p> 難易度: <span id="two"></span></p>
+	</div>
+	<div id="volume">
+		<p> 份量: 1-2 人</p>
+	</div>
+</div>
+	
+
+<div class = "bild">
+	<img src="../images/Wurstsalat.jpg">
+</div>
+<div class="description">
+	<div class="ingredient">
+		<h2> 準備材料</h2>
+		<ul>
+			<li>香腸     -500g</li>
+			<li>洋蔥     -1個</li>
+			<li>蘋果     -半個</li>
+			<li>歐芹     -3-4把</li>
+			<li>酸黃瓜   -2小根</li>
+			<li>鹽、胡椒    </li>
+			<li>醋         -1杓半</li>
+			<li>葵花籽油   -3杓</li>
+		</ul>
+	</div>
+	<div class="step">
+		<h2> 製作步驟</h2>
+		<ol>
+			<li>香腸、蘋果、酸黃瓜切成細條，洋蔥切成洋蔥圈</li>
+			<li>醋、葵花籽油、鹽與胡椒倒入小碗攪拌均勻，也可添加些許辣椒粉</li>
+			<li>將調好的知道入切好的沙拉充分攪拌，靜置20分鐘</li>
+			<li>歐芹切碎，在沙拉上撒上些許即可上桌</li>
+		</ol>
+	</div>
+</div>
+<div class="GA">
+	<img src="../images/Gutenappetit.jpg">
+</div>
+</div>
+
+<div class = "footer">
+ <p><a href="https://www.dachu.co/recipe/209867">Source: 大廚網</a></p>
+</div>
+<script>
+function animate(obj, initVal, lastVal, duration) {
+    let startTime = null;
+    // 取得現在時間戳 (currentTime)
+    let currentTime = Date.now();
+    // 傳送現在時間至step function
+    const step = (currentTime) => {
+        // 指派開始時間
+        if (!startTime) {
+            startTime = currentTime ;
+        }
+
+        // 計算顯示數值
+        const progress = Math.min((currentTime - startTime) / duration, 1);
+
+        // 用progress計算顯示內容
+        obj.innerHTML = Math.floor(progress * (lastVal - initVal) + initVal);
+
+        // 檢查是否是最後的數值
+        if (progress < 1) {
+            window.requestAnimationFrame(step);
+        }
+        else{
+            window.cancelAnimationFrame(window.requestAnimationFrame(step));
+        }
+    };
+
+    // 開始顯示動畫
+    window.requestAnimationFrame(step);
+}
+
+// 取得要進行數字動畫的網頁元素 (利用ID搜尋)
+let text1 = document.getElementById('one');
+let text2 = document.getElementById('two');
+
+// 設定 起始值 結束值 持續時間
+const load = () => {
+    animate(text1, 0, 15, 1000);
+    animate(text2, 0, 1, 500);
+}
+
+</script>
+</body>
+</html>
+
+

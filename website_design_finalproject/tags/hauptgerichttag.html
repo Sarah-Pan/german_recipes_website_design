@@ -1,0 +1,276 @@
+<html>
+<head>
+<script src="https://kit.fontawesome.com/ad41a5cf04.js" crossorigin="anonymous"></script>
+<link href="../images/favicon.ico" rel="shortcut icon"/>
+<title>hauptgerichttag</title>
+	
+<style>
+html{
+	font-size:10px;
+	}
+
+body{ background-color:white;}
+
+html, body {
+  height: 100%;
+  margin: 0;
+}
+
+.wrapper {
+  min-height: 100%;
+  display: flex;
+  flex-direction: column;
+  margin-bottom:-50px;
+  
+}
+
+.banner img{
+            width: 100%;
+            height: auto;
+			position: relative;
+			opacity:0.6	;
+}
+		
+.banner{
+            position: relative;
+			align-items: center;
+
+}
+		
+.banner .title h1{
+            width: 100%;
+            position: absolute;
+            display: flex;
+            justify-content: center;
+            top: 40%;
+            font-size: 4rem;
+			color: black;
+}
+		
+.banner .title p{
+            width: 100%;
+            position: absolute;
+            display: flex;
+            justify-content: center;
+            top: 30%;
+            font-size: 2.5rem;
+			font-weight:bold;
+			font-family: "FangSong";
+			color: black;
+			
+}
+
+nav {
+		color: black;
+		min-width: 600px;
+		margin:0px;
+		padding:5px;
+		background-color: black;
+}
+
+nav a{
+		color: white;
+		font-size: 2rem;
+		text-decoration: none;
+}
+		
+nav a:hover{
+		text-decoration: underline;
+}
+.tag{
+	margin:20px;
+	height:100px;
+	/*border:2px solid black;*/
+	display:flex;
+	justify-content:flex-start;}
+	
+.tag a{
+	height:20px;
+	font-size:2rem;
+	font-weight:bold;
+	line-height:20px;
+	color:black;
+	text-decoration:none;
+	border: 2px solid lightsteelblue;
+	background-color:lightblue;
+	border-radius: 50px 10px 50px 10px;
+	padding: 10px;	
+	}
+.tag a:hover{
+	color:indianred;
+	text-decoration:underline;}	
+.tag h3{
+	/*border:2px solid black;*/
+	margin-left:50px;
+	font-size:2rem;
+	line-height:30px;}
+.de{
+	margin-left:;
+	font-style:italic;} 
+	
+.recipe{
+	display: flex;
+	justify-content:space-around;
+	height:500px;
+	margin-right:20px;
+	/*border:2px solid black;*/
+	}
+	
+.kartoffel{
+	/*border:2px solid black;*/
+	text-align:center;
+	margin-top:20px;
+	width:30%;
+		}
+		
+.kartoffel img{
+	width:60%;
+	height:auto;
+	border:2px solid grey;
+	border-radius: 20px;
+	box-shadow: 0 2px 5px 5px lightgrey;
+	
+	}
+	
+.kartoffel a{
+	font-size:2rem;
+	text-shadow: 5px 2px 5px #828282;
+	color:black;
+	text-decoration:none;}
+	
+.kartoffel a:hover{
+	text-decoration:underline;}
+
+.wurst{
+	/*border:2px solid black;*/
+	text-align:center;
+	margin-top:20px;
+	width:30%;	
+}
+		
+.wurst img{
+	width:65%;
+	height:auto;
+	border:2px solid grey;
+	border-radius: 20px;
+	box-shadow: 0 1px 10px 5px lightgrey;
+	}
+	
+.wurst a{
+	font-size:2rem;
+	text-shadow: 5px 2px 5px #828282;
+	color:black;
+	text-decoration:none;}
+	
+.wurst a:hover{
+	text-decoration:underline;}
+	
+.bier{
+	/*border:2px solid black;*/
+	text-align:center;
+	margin-top:20px;
+	width:30%;
+}
+		
+.bier img{
+	width:65%;
+	height:auto;
+	border:2px solid grey;
+	border-radius: 20px;
+	box-shadow: 0 1px 10px 5px lightgrey;
+	}
+	
+.bier a{
+	font-size:2rem;
+	text-shadow: 5px 2px 5px #828282;
+	color:black;
+	text-decoration:none;}
+	
+.bier a:hover{
+	text-decoration:underline;}	
+.level{
+	/*border:2px solid black;*/
+	align-items:center;
+	display:flex;
+	justify-content:center;}
+	
+.level p{
+	width:100px;
+	font-size:2rem;
+	font-weight:bold;
+		}
+i{
+	color:#FFC300;
+	font-size:1.5rem;}
+.footer{
+	background-color:black;
+	width:100%;
+	height:40px;
+	margin-top:50px;
+	text-align:center;
+	}	
+.footer p {
+	font-size:1.5rem;
+	color:lightgrey;
+	line-height:40px;}
+</style>
+</head>
+
+<body>
+
+<nav>
+<a href="../finalproject.html">首頁 |</a> 
+<a href="../About.html">關於 |</a> 
+<a href="../finalproject.html#tags">標籤 |</a> 
+<a href="../rezept.html">所有食譜 |</a>
+</nav>
+<div class="wrapper">
+<div class="banner">
+    <img src="../images/banner.jpg">
+    <div class="title">
+        <h1>Rezepten für Deutsches Gericht</h1>
+		<p>德國傳統美食 食譜集!</p>
+		</div>
+    </div>
+<div class="tag" id="T">
+	<a href="#">主餐 Hauptgerichte</a>
+	<h3><span class="de">Ein leckeres Hauptgericht ist doch nötig!</span><br>
+	不可或缺的主菜! :)</h3>
+</div>
+
+<div class="recipe">
+	<div class="kartoffel">
+		<a href="../recipes/Schweinshaxe.html#N" target="_blank"><img src="../images/schweinshaxe-mit-sauerkraut.jpg"></a>
+		<h3><a href="../recipes/Schweinshaxe.html#N" target="_blank">德式豬腳佐酸菜 Schweinshaxe</a></h3>
+		<div class="level"><p>難易度: </p>
+		<i class="fa-solid fa-star"></i>
+		<i class="fa-solid fa-star"></i>
+		<i class="fa-solid fa-star"></i>
+	</div>
+	</div>
+		<div class="bier">
+		<a href="../recipes/Wienerschnitzel.html#N" target="_blank"><img src="../images/schnitzel.jpg"></a>
+		<h3><a href="../recipes/Wienerschnitzel.html#N" target="_blank">維也納炸豬排 Wiener Schnitzel</a></h3>
+		<div class="level"><p>難易度: </p>
+		<i class="fa-solid fa-star"></i>
+		<i class="fa-solid fa-star"></i>
+		<i class="fa-solid fa-star"></i>
+		<i class="fa-solid fa-star"></i>
+		</div>
+	</div>
+	<div class="wurst">
+		<a href="../recipes/Rahmgulasch.html#N" target="_blank"><img src="../images/rahmgulasch.jpg"></a>
+		<h3><a href="../recipes/Rahmgulasch.html#N" target="_blank">德式奶油燉牛肉 Rahmgulasch</a></h3>
+		<div class="level">
+			<p>難易度: </p>
+			<i class="fa-solid fa-star"></i>
+			<i class="fa-solid fa-star"></i>					
+		</div>
+	</div>
+</div>
+</div>
+<footer class="footer">
+	<p>I do not own any of these recipes, sources are linked down below the website.</p>
+</footer>
+</body>
+</html>

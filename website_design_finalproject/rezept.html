@@ -1,0 +1,375 @@
+<html>
+<head>
+<script src="https://kit.fontawesome.com/ad41a5cf04.js" crossorigin="anonymous"></script>
+<link href="images/favicon.ico" rel="shortcut icon"/>
+<title>All recipes</title>
+<style>
+html{
+	font-size:10px;
+	}
+
+body{ background-color:white;}
+
+nav {
+		color: black;
+		min-width: 600px;
+		margin:0px;
+		padding:5px;
+		background-color: black;
+}
+
+nav a{
+		color: white;
+		font-size: 2rem;
+		text-decoration: none;
+}
+		
+nav a:hover{
+		text-decoration: underline;
+}
+
+.title{
+	font-size:3rem;
+	text-align:center;
+	line-height:40px;
+	text-shadow: 3px 3px 2px rgba(160, 156, 156, 0.63);}
+
+.all{
+	display:flex;
+	flex-wrap:wrap;
+	justify-content:space-around;
+	}
+
+.kartoffel{
+	/*border:2px solid black;*/
+	text-align:center;
+	margin-top:20px;
+	width:30%;
+	box-shadow: 5px 5px 10px 1px rgba(114, 193, 215, 0.77);
+		}
+		
+.kartoffel img{
+	width:60%;
+	height:auto;
+	border:2px solid grey;
+	border-radius: 20px;
+	box-shadow: 0 2px 5px 5px lightgrey;	
+	}
+	
+.kartoffel a{
+	font-size:2rem;
+	text-shadow: 5px 2px 5px #828282;
+	color:black;
+	text-decoration:none;}
+	
+.kartoffel a:hover{
+	text-decoration:underline;}
+
+.wurst{
+	/*border:2px solid black;*/
+	text-align:center;
+	margin-top:20px;
+	width:30%;
+	box-shadow: 5px 5px 10px 1px rgba(114, 193, 215, 0.77);	
+}
+		
+.wurst img{
+	width:40%;
+	height:auto;
+	border:2px solid grey;
+	border-radius: 20px;
+	box-shadow: 0 1px 10px 5px lightgrey;
+	}
+	
+.wurst a{
+	font-size:2rem;
+	text-shadow: 5px 2px 5px #828282;
+	color:black;
+	text-decoration:none;}
+	
+.wurst a:hover{
+	text-decoration:underline;}	
+	
+.rotegruetze{
+	/*border:2px solid black;*/
+	text-align:center;
+	margin-top:20px;
+	width:30%;	
+	box-shadow: 5px 5px 10px 1px rgba(114, 193, 215, 0.77);
+}
+		
+.rotegruetze img{
+	width:40%;
+	height:auto;
+	border:2px solid grey;
+	border-radius: 20px;
+	box-shadow: 0 1px 10px 5px lightgrey;
+	}
+	
+.rotegruetze a{
+	font-size:2rem;
+	text-shadow: 5px 2px 5px #828282;
+	color:black;
+	text-decoration:none;}
+	
+.rotegruetze a:hover{
+	text-decoration:underline;}
+
+.apfelkuchen{
+	/*border:2px solid black;*/
+	text-align:center;
+	margin-top:20px;
+	width:30%;
+	box-shadow: 5px 5px 10px 1px rgba(114, 193, 215, 0.77);
+		}
+		
+.apfelkuchen img{
+	width:60%;
+	height:auto;
+	border:2px solid grey;
+	border-radius: 20px;
+	box-shadow: 0 2px 5px 5px lightgrey;
+	
+	}
+	
+.apfelkuchen a{
+	font-size:2rem;
+	text-shadow: 5px 2px 5px #828282;
+	color:black;
+	text-decoration:none;}
+	
+.apfelkuchen a:hover{
+	text-decoration:underline;}	
+	
+.rahmgulasch{
+	/*border:2px solid black;*/
+	text-align:center;
+	margin-top:20px;
+	width:30%;
+	box-shadow: 5px 5px 10px 1px rgba(114, 193, 215, 0.77);	
+}
+		
+.rahmgulasch img{
+	width:60%;
+	height:auto;
+	border:2px solid grey;
+	border-radius: 20px;
+	box-shadow: 0 1px 10px 5px lightgrey;
+	}
+	
+.rahmgulasch a{
+	font-size:2rem;
+	text-shadow: 5px 2px 5px #828282;
+	color:black;
+	text-decoration:none;}
+	
+.rahmgulasch a:hover{
+	text-decoration:underline;}
+	
+.schweinshaxe{
+	/*border:2px solid black;*/
+	text-align:center;
+	margin-top:20px;
+	width:30%;
+	box-shadow: 5px 5px 10px 1px rgba(114, 193, 215, 0.77);
+		}
+		
+.schweinshaxe img{
+	width:60%;
+	height:auto;
+	border:2px solid grey;
+	border-radius: 20px;
+	box-shadow: 0 2px 5px 5px lightgrey;
+	
+	}
+	
+.schweinshaxe a{
+	font-size:2rem;
+	text-shadow: 5px 2px 5px #828282;
+	color:black;
+	text-decoration:none;}
+	
+.schweinshaxe a:hover{
+	text-decoration:underline;}
+	
+.bier{
+	/*border:2px solid black;*/
+	text-align:center;
+	margin-top:20px;
+	width:30%;
+	box-shadow: 5px 5px 10px 1px rgba(114, 193, 215, 0.77);
+}
+		
+.bier img{
+	width:60%;
+	height:auto;
+	border:2px solid grey;
+	border-radius: 20px;
+	box-shadow: 0 1px 10px 5px lightgrey;
+	}
+	
+.bier a{
+	font-size:2rem;
+	text-shadow: 5px 2px 5px #828282;
+	color:black;
+	text-decoration:none;}
+	
+.bier a:hover{
+	text-decoration:underline;}
+	
+.wienerschnitzel{
+	/*border:2px solid black;*/
+	text-align:center;
+	margin-top:20px;
+	width:30%;
+	box-shadow: 5px 5px 10px 1px rgba(114, 193, 215, 0.77);
+}
+		
+.wienerschnitzel img{
+	width:60%;
+	height:auto;
+	border:2px solid grey;
+	border-radius: 20px;
+	box-shadow: 0 1px 10px 5px lightgrey;
+	}
+	
+.wienerschnitzel a{
+	font-size:2rem;
+	text-shadow: 5px 2px 5px #828282;
+	color:black;
+	text-decoration:none;}
+	
+.wienerschnitzel a:hover{
+	text-decoration:underline;}
+	
+.kartoffelsuppe{
+	/*border:2px solid black;*/
+	text-align:center;
+	margin-top:20px;
+	width:30%;
+	box-shadow: 5px 5px 10px 1px rgba(114, 193, 215, 0.77);
+		}
+		
+.kartoffelsuppe img{
+	width:40%;
+	height:auto;
+	border:2px solid grey;
+	border-radius: 20px;
+	box-shadow: 0 2px 5px 5px lightgrey;
+	
+	}
+	
+.kartoffelsuppe a{
+	font-size:2rem;
+	text-shadow: 5px 2px 5px #828282;
+	color:black;
+	text-decoration:none;}
+	
+.kartoffelsuppe a:hover{
+	text-decoration:underline;}
+	
+.erbsensuppe{
+	/*border:2px solid black;*/
+	text-align:center;
+	margin-top:20px;
+	width:30%;	
+	box-shadow: 5px 5px 10px 1px rgba(114, 193, 215, 0.77);
+}
+		
+.erbsensuppe img{
+	width:40%;
+	height:auto;
+	border:2px solid grey;
+	border-radius: 20px;
+	box-shadow: 0 1px 10px 5px lightgrey;
+	}
+	
+.erbsensuppe a{
+	font-size:2rem;
+	text-shadow: 5px 2px 5px #828282;
+	color:black;
+	text-decoration:none;}
+	
+.erbsensuppe a:hover{
+	text-decoration:underline;}
+	
+.footer{
+	background-color:black;
+	width:100%;
+	height:40px;
+	margin-top:50px;
+	text-align:center;
+	}	
+.footer p {
+	font-size:1.5rem;
+	color:lightgrey;
+	line-height:40px;}
+</style>
+</head>
+
+<body>
+<nav>
+<a href="finalproject.html">首頁 |</a> 
+<a href="About.html">關於 |</a> 
+<a href="finalproject.html#tags">標籤 |</a> 
+<a href="#">所有食譜 |</a>
+</nav>
+<h1 class="title">Alle Rezepten: nach Schwierigkeitsgrad geordnet.<br>
+所有食譜: 依難易度由左至右排列</h1>
+<div class="all">
+	<div class="kartoffel">
+		<a href="recipes/Kartoffelsalat.html#N" target="_blank"><img src="images/PotatoSalad.jpg"></a>
+		<h3><a href="recipes/Kartoffelsalat.html#N" target="_blank">馬鈴薯沙拉 Kartoffelsalat</a></h3>	
+	</div>
+	
+	<div class="wurst">
+		<a href="recipes/Wurstsalat.html#N" target="_blank"><img src="images/Wurstsalat.jpg"></a>
+		<h3><a href="recipes/Wurstsalat.html#N" target="_blank">香腸沙拉 Wurstsalat</a></h3>
+	</div>
+	
+	<div class="rotegruetze">
+		<a href="recipes/Rotegrütze.html#N" target="_blank"><img src="images/rotegruetze.jpg"></a>
+		<h3><a href="recipes/Rotegrütze.html#N" target="_blank">紅莓布丁 Rote Grütze</a></h3>
+	</div>
+	
+	<div class="apfelkuchen">
+		<a href="recipes/Apfelkuchen.html#N" target="_blank"><img src="images/apfelkuchen.jpg"></a>
+		<h3><a href="recipes/Apfelkuchen.html#N" target="_blank">德國蘋果派 Apfelkuchen</a></h3>
+	</div>
+	
+	<div class="rahmgulasch">
+		<a href="recipes/Rahmgulasch.html#N" target="_blank"><img src="images/rahmgulasch.jpg"></a>
+		<h3><a href="recipes/Rahmgulasch.html#N" target="_blank">德式奶油燉牛肉 Rahmgulasch</a></h3>
+	</div>
+	
+	<div class="schweinshaxe">
+		<a href="recipes/Schweinshaxe.html#N" target="_blank"><img src="images/schweinshaxe-mit-sauerkraut.jpg"></a>
+		<h3><a href="recipes/Schweinshaxe.html#N" target="_blank">德式豬腳佐酸菜 Schweinshaxe</a></h3>
+	</div>
+	
+	<div class="bier">
+		<a href="recipes/Kaesebiersuppe.html#N" target="_blank"><img src="images/bier-kasesuppe.jpg"></a>
+		<h3><a href="recipes/Kaesebiersuppe.html#N" target="_blank">德式啤酒起司濃湯 Bier-Käsesuppe</a></h3>
+	</div>
+	
+	<div class="wienerschnitzel">
+		<a href="recipes/Wienerschnitzel.html#N" target="_blank"><img src="images/schnitzel.jpg"></a>
+		<h3><a href="recipes/Wienerschnitzel.html#N" target="_blank">維也納炸豬排 Wiener Schnitzel</a></h3>
+	</div>
+	
+	<div class="kartoffelsuppe">
+		<a href="recipes/Kartoffelsuppe.html#N" target="_blank"><img src="images/kartoffelsuppe.jpg"></a>
+		<h3><a href="recipes/Kartoffelsuppe.html#N" target="_blank">德式馬鈴薯濃湯 Kartoffelsuppe</a></h3>
+	</div>
+	
+	<div class="erbsensuppe">
+		<a href="recipes/Erbsensuppe.html#N" target="_blank"><img src="images/Erbsensuppe.jpg"></a>
+		<h3><a href="recipes/Erbsensuppe.html#N" target="_blank">德式豌豆濃湯 Erbsensuppe</a></h3>
+	</div>
+</div>
+<footer class="footer">
+	<p>I do not own any of these recipes, sources are linked down below the website.</p>
+</footer>
+
+</body>
+</html>
